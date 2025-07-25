@@ -17,7 +17,7 @@ def read_requirements():
 setup(
     name="bilibili-downloader",
     version="v0.0.1",
-    author="Your Name",
+    author="chenhao",
     author_email="twch97780@gmail.com",
     description="一个简单易用的B站视频下载Python库",
     long_description=long_description,
