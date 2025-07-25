@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bilibili-downloader"
+version = "1.0.0"
+description = "一个简单易用的B站视频下载Python库"
+readme = "README.md"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Video",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = ["bilibili", "video", "download", "audio", "api"]
+dependencies = [
+    "aiohttp>=3.8.0",
+    "httpx>=0.24.0",
+    "requests>=2.25.0",
+    "ffmpy3>=0.2.4",
+]
+requires-python = ">=3.7"
+
+[project.urls]
+Homepage = "https://github.com/twwch/bilibili-downloader"
+Documentation = "https://github.com/twwch/bilibili-downloader#readme"
+Repository = "https://github.com/twwch/bilibili-downloader.git"
+"Bug Tracker" = "https://github.com/twwch/bilibili-downloader/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.18.0",
+    "black>=22.0.0",
+    "flake8>=4.0.0",
+    "twine>=4.0.0",
+    "wheel>=0.38.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["bilibili_downloader*"]
+exclude = ["tests*", "docs*"]

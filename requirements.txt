@@ -1,0 +1,4 @@
+aiohttp>=3.8.0
+httpx>=0.24.0
+requests>=2.25.0
+ffmpy3>=0.2.4
