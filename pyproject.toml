@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "bilibili-downloader"
-version = "1.0.0"
+version = "v0.0.2"
 description = "一个简单易用的B站视频下载Python库"
 readme = "README.md"
 authors = [
-    {name = "Your Name", email = "your.email@example.com"}
+    {name = "chenhao", email = "twch97780@gmail.com"}
 ]
 license = {text = "MIT"}
 classifiers = [

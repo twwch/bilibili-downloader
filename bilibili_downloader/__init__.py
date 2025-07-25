@@ -7,7 +7,7 @@ from .downloader import BilibiliDownloader
 from .models import VideoInfo, DownloadResult
 from .exceptions import BilibiliDownloadError, VideoNotFoundError, DurationExceededError
 
-__version__ = "1.0.0"
+__version__ = "v0.0.2"
 __all__ = [
     "BilibiliDownloader",
     "VideoInfo",
