@@ -16,7 +16,7 @@ def read_requirements():
 
 setup(
     name="bilibili-downloader",
-    version="v0.0.2",
+    version="v0.0.3",
     author="chenhao",
     author_email="twch97780@gmail.com",
     description="一个简单易用的B站视频下载Python库",
@@ -30,16 +30,13 @@ setup(
         "Topic :: Multimedia :: Video",
         "Topic :: Software Development :: Libraries :: Python Modules",
         "License :: OSI Approved :: MIT License",
-        "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.7",
-        "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
         "Operating System :: OS Independent",
     ],
     keywords="bilibili video download audio api",
-    python_requires=">=3.7",
+    python_requires=">=3.9",
     install_requires=read_requirements(),
     extras_require={
         "dev": [
